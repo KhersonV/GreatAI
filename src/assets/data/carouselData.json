@@ -1,0 +1,48 @@
+
+{
+	"slides": [
+		{
+			"id" : 1,
+			"img": "elsa.jpeg",
+			"src": "https://v2.cdnpk.net/videvo_files/video/premium/partners0996/large_watermarked/BB_84152f27-fc7f-4925-83db-110e268ceac5_preview.mp4",
+			"alt": "Elsa",
+			"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua"
+		},
+		{
+			"img": "https://videocdn.cdnpk.net/joy/content/video/free/2018-08/thumbnails/180626_12_Seocho-Dong_23_large.jpg",
+			"src": "https://videocdn.cdnpk.net/joy/content/video/free/2018-08/large_preview/180626_12_Seocho-Dong_23.mp4",
+			"alt": "Spiderman",
+			"description": "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
+		},
+		{
+			"img": "https://videocdn.cdnpk.net/cdn/content/video/premium/video0324/thumbnails/630_630-0156_large.jpg",
+			"src": "https://videocdn.cdnpk.net/cdn/content/video/premium/video0324/large_watermarked/630_630-0156_preview.mp4",
+			"alt": "Superman",
+			"description": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		},
+		{
+			"img": "./img/rapunzel.jpeg",
+			"src": "https://videocdn.cdnpk.net/euphony/content/video/happy/premium/partners0120/large_watermarked/BB_0592244c-1d24-41f3-a624-c960ccd5fca0_preview.mp4",
+			"alt": "Rapunzel",
+			"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+		},
+		{
+			"img": "https://v3.cdnpk.net/videvo_files/video/free/2014-07/thumbnails/Saint_Barthelemy_2_large.jpg",
+			"src": "https://v3.cdnpk.net/videvo_files/video/free/2014-07/large_preview/Saint_Barthelemy_2.mp4",
+			"alt": "hero-5",
+			"description": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi"
+		},
+		{
+			"img": "https://videocdn.cdnpk.net/joy/content/video/free/2019-12/thumbnails/190915_B_02_HaLong_06_large.jpg",
+			"src": "https://videocdn.cdnpk.net/joy/content/video/free/2019-12/large_preview/190915_B_02_HaLong_06.mp4",
+			"alt": "hero-6",
+			"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+		},
+		{
+			"img": "https://videocdn.cdnpk.net/cdn/content/video/premium/video0304/thumbnails/601-2_601-5985_large.jpg",
+			"src": "https://videocdn.cdnpk.net/cdn/content/video/premium/video0304/large_watermarked/601-2_601-5985_preview.mp4",
+			"alt": "hero-7",
+			"description": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+		}
+	]
+}

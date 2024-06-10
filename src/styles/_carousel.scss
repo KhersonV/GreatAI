@@ -1,0 +1,250 @@
+.arrow-container-left {
+	position: absolute;
+	left: 0;
+	padding: 0.2rem 0.2rem;
+}
+
+.arrow-container-right {
+	position: absolute;
+	right: 0;
+	padding: 0.2rem 0.2rem;
+}
+
+.arrow-container-bottom {
+	position: absolute;
+	bottom: 0;
+	padding: 0.2rem 0.2rem;
+}
+
+.arrow {
+	//position: absolute;
+	width: 3.5rem;
+	height: 3.5rem;
+	color: white;
+	filter: drop-shadow(0px 0px 5px #555);
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.arrow-left {
+	margin-left: 0.5rem;
+	margin-right: 0.25rem;
+
+	&:hover {
+		margin-left: 0.25rem;
+		margin-right: 0.5rem;
+		opacity: 0.8;
+	}
+}
+
+.arrow-right {
+	margin-left: 0.25rem;
+	margin-right: 0.5rem;
+
+	&:hover {
+		margin-left: 0.5rem;
+		margin-right: 0.25rem;
+		opacity: 0.8;
+	}
+}
+
+.arrow-bottom {
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+
+	&:hover {
+		margin-top: 0.5rem;
+		margin-bottom: 0.25rem;
+		opacity: 0.8;
+	}
+}
+
+.arrow-up {
+	margin-top: 0.5rem;
+	margin-bottom: 0.25rem;
+
+	&:hover {
+		margin-top: 0.25rem;
+		margin-bottom: 0.5rem;
+		opacity: 0.8;
+	}
+}
+
+.carousel {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.slide {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.slide-hidden {
+		display: none;
+	}
+
+	.indicators {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+		position: absolute;
+		bottom: 0rem;
+		padding-bottom: 5.5rem;
+		//background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+
+		.indicator {
+			background-color: white;
+			height: 1.0rem;
+			width: 1.0rem;
+			border-radius: 100%;
+			border: none;
+			outline: none;
+			box-shadow: 0px 0px 5px #555;
+			margin: 0 0.25rem;
+
+			&:hover {
+				cursor: pointer;
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+		}
+
+		.indicator-inactive
+		{
+			background-color: transparent;
+			border: 1px solid white;
+		}
+
+		.thumb {
+			width: 5rem;
+			height: 5rem;
+			border: none;
+			outline: none;
+			margin: 0 0.25rem;
+			border-radius: 0.75rem;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			img {
+				border-radius: 0.75rem;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.thumb-0 {
+			width: 9rem;
+			height: 10rem;
+			border: 3px solid white;
+			box-shadow: 0px 0px 6px #555;
+			margin: 0 0.5rem;
+		}
+
+		.thumb-1 {
+			width: 7rem;
+			height: 7rem;
+		}
+	}
+
+	/*.next-section {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}*/
+
+	.hero-details {
+		position: absolute;
+		left: 5rem;
+		top: 55%;
+		color: white;
+		width: 35%;
+		text-shadow: 0.2rem 0.2rem #00000073;
+		background-color: rgba(1,1,1, 0.2);
+		padding: 0rem 2rem 2rem 2rem;
+		border-radius: 2rem;
+
+		.titel-container {
+			display: flex;
+			align-items: center;
+			gap: 2.0rem;
+
+			span {
+				font-size: 2.4rem;
+				padding: 0.5rem 1.0rem;
+				background-color: white;
+				color: #777;
+				border-radius: 1.0rem;
+			}
+			.hero-name {
+				font-size: 8rem;
+				text-transform: uppercase;
+			}
+		}
+
+		.hero-description {
+			font-size: 2.0rem;
+			text-align: justify;
+		}
+	}
+}
+
+
+@keyframes slide-left-in {
+	from {
+		transform: translateX(100%);
+	} to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slide-left-out {
+	from {
+		transform: translateX(0%);
+	} to {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes slide-right-in {
+	from {
+		transform: translateX(-100%);
+	} to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slide-right-out {
+	from {
+		transform: translateX(0%);
+	} to {
+		transform: translateX(100%);
+	}
+}
+
+.left-in {
+	animation: slide-left-in .9s 1 forwards;
+}
+
+.left-out {
+	animation: slide-left-out .9s 1 forwards;
+}
+
+.right-in
+{
+	animation: slide-right-in .9s 1 forwards;
+}
+
+.right-out
+{
+	animation: slide-right-out .9s 1 forwards;
+}

@@ -1,0 +1,3 @@
+# GrAI
+
+npm run dev
