@@ -298,41 +298,71 @@ ul {
   text-align: justify;
 }
 
-.form {
+.input-screen {
   position: relative;
   width: 100%;
   background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
-  background: linear-gradient(106.2deg, rgb(0, 186, 217) -4.3%, rgb(121, 134, 204) 14.1%, rgb(150, 117, 206) 34.7%, rgb(186, 105, 200) 53%, rgb(240, 71, 112) 74.7%, rgb(239, 162, 92) 95.6%);
-  background: radial-gradient(circle at 10% 20%, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 90%);
-  background: linear-gradient(103.9deg, rgb(12, 166, 180) 3%, rgb(100, 51, 161) 93.9%);
-  padding: 0 5rem;
-}
-.form form {
+  padding: 2rem 5rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.form form textarea {
+
+.communication-with-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.prompt {
   font-size: 1.4rem;
   border: 4px solid transparent;
   border-radius: 1rem;
-  margin-top: 8rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
   padding: 0.5rem 1rem;
   resize: none;
   width: 100%;
+  max-width: 600px;
   height: 10rem;
   outline: none;
+  transition: border 0.3s ease;
 }
-.form form textarea:focus {
+
+.prompt:focus {
   border: 4px solid rgba(0, 0, 0, 0.15);
 }
-.form form button {
+
+.response-text {
+  font-size: 1.4rem;
+  border: 4px solid transparent;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  resize: none;
+  width: 100%;
+  max-width: 600px;
+  height: 10rem;
+  outline: none;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.generate-button {
   min-width: 15rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
+  margin-top: 1rem;
+  background-color: #444;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+  background-color: #666;
 }
 
 .scroll-container {
@@ -345,6 +375,7 @@ ul {
   border-radius: 1rem;
   padding: 0.2rem 0.2rem;
 }
+
 
 .result-screen-container {
   height: 100%;

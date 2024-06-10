@@ -1,106 +1,136 @@
 .screen-2-container {
-	height: 100%;
-	display: flex;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #3a7bd5 0%, #00d2ff 100%);
+    padding: 2rem;
 }
 
 .img-hero {
-	position: relative;
-	width: 100%;
-	//margin: 4rem 2rem;
-
-	video {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-
-	.hero-details {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		color: white;
-		width: 100%;
-		text-shadow: 0.2rem 0.2rem #00000073;
-		//background-color: rgba(1,1,1, 0.2);
-		background: radial-gradient(circle at 10% 20%, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 90%);
-		background: radial-gradient(circle at 10% 20%, rgba(64, 84, 178, 0.7) 0%, rgba(219, 2, 234, 0.5) 90%);
-		padding: 0rem 5rem 5rem 5rem;
-
-		.titel-container {
-			display: flex;
-			align-items: center;
-			gap: 2.0rem;
-
-			span {
-				font-size: 2.4rem;
-				padding: 0.5rem 1.0rem;
-				background-color: white;
-				color: #777;
-				border-radius: 1.0rem;
-			}
-			.hero-name {
-				font-size: 8rem;
-				text-transform: uppercase;
-			}
-		}
-
-		.hero-description {
-			font-size: 2.0rem;
-			text-align: justify;
-		}
-	}
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.form {
-	position: relative;
-	width: 100%;
-	//background-color: mediumseagreen;
-	//: linear-gradient(109.6deg, rgb(80, 35, 217) 11.2%, rgb(217, 35, 189) 91.1%);
-	//background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
-	background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
-	background: linear-gradient(106.2deg, rgb(0, 186, 217) -4.3%, rgb(121, 134, 204) 14.1%, rgb(150, 117, 206) 34.7%, rgb(186, 105, 200) 53%, rgb(240, 71, 112) 74.7%, rgb(239, 162, 92) 95.6%);
-	background: radial-gradient(circle at 10% 20%, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 90%);
-	background: linear-gradient(103.9deg, rgb(12, 166, 180) 3%, rgb(100, 51, 161) 93.9%);
-	padding: 0 5.0rem;
+.img-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+}
 
-	form {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+.hero-details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-shadow: 0.2rem 0.2rem #00000073;
+    background: radial-gradient(circle at 10% 20%, rgba(64, 84, 178, 0.7) 0%, rgba(219, 2, 234, 0.5) 90%);
+    padding: 0rem 5rem 5rem 5rem;
+}
 
-		textarea {
-			font-size: 1.4rem;
-			border: 4px solid transparent;
-			border-radius: 1rem;
-			margin-top: 8rem;
-			margin-bottom: 2rem;
-			padding: 0.5rem 1.0rem;
-			resize: none;
-			width: 100%;
-			height: 10rem;
-			outline: none;
-			&:focus {
-				border: 4px solid rgba(0,0,0, 0.15);
-			}
-		}
+.titel-container {
+    display: flex;
+    align-items: center;
+    gap: 2.0rem;
+}
 
-		button {
-			min-width: 15rem;
-			padding: 1.0rem 2rem;
-			border: none;
-			border-radius: 1rem;
-			cursor: pointer;
-		}
-	}
+.titel-container span {
+    font-size: 2.4rem;
+    padding: 0.5rem 1.0rem;
+    background-color: white;
+    color: #777;
+    border-radius: 1.0rem;
+}
+
+.hero-name {
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.hero-description {
+    font-size: 2.0rem;
+    text-align: justify;
+}
+
+.input-screen {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.communication-with-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.prompt {
+    font-size: 1.4rem;
+    border: 4px solid transparent;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    resize: none;
+    width: 100%;
+    max-width: 600px;
+    height: 10rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.prompt:focus {
+    border: 4px solid rgba(0, 0, 0, 0.15);
+}
+
+.response-text {
+    font-size: 1.4rem;
+    border: 4px solid transparent;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    resize: none;
+    width: 100%;
+    max-width: 600px;
+    height: 10rem;
+    outline: none;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.generate-button {
+    min-width: 15rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: #444;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+    background-color: #666;
 }
 
 .scroll-container {
-	position: absolute;
-	bottom: 5rem;
-	right: 5rem;
-	display: flex;
-	flex-direction: column;
-	border: 1px solid white;
-	border-radius: 1rem;
-	padding: 0.2rem 0.2rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 0.2rem 0.2rem;
 }
